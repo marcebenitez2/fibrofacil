@@ -28,7 +28,8 @@ const CategoriesPage = () => {
   return (
     <div className="container mx-auto py-8">
       <h1 className="text-4xl font-bold mb-8 text-neutral-800 text-center">
-        Explora Nuestras Categorías de Madera
+        Explora Nuestras <span className="categorias">Categorías</span> de
+        Madera
       </h1>
 
       <div className="mb-12 max-w-md mx-auto">

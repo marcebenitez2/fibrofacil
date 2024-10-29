@@ -4,7 +4,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Percent, ShoppingCart } from "lucide-react";
 import React from "react";
 import { IProduct } from "../types/IProduct";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 const CardProduct = ({ product }: { product: IProduct }) => {
   return (
@@ -24,7 +24,9 @@ const CardProduct = ({ product }: { product: IProduct }) => {
             alt={product.name}
             className="w-full h-48 object-cover mb-4 rounded"
           />
-          <h3 className="font-semibold mb-2 text-brown-800">{product.name}</h3>
+          <h3 className="font-semibold mb-2 text-brown-800 product-name">
+            {product.name}
+          </h3>
           <p className="text-2xl font-bold text-brown-600">
             ${product.price.toFixed(2)}
           </p>

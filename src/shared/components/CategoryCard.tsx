@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { ICategory } from "../types/ICategory";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 const CategoryCard = ({ category }: { category: ICategory }) => {
   return (

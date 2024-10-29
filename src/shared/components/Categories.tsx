@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import { ChevronRight } from "lucide-react";
 import CategoryCard from "./CategoryCard";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 const Categories = () => {
   const categories = [
@@ -30,8 +30,8 @@ const Categories = () => {
     <section id="categorias" className="py-16 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-semibold text-brown-800">
-            Categorías Más Buscadas
+          <h2 className="text-3xl font-semibold text-brown-800 categorias">
+            Categorías
           </h2>
           <p className="text-brown-600 mt-2">
             Explora nuestras categorías populares de productos

@@ -71,3 +71,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.product-name {
+  view-transition-name: product-name;
+  width: fit-content;
+}

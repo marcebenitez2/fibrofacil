@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import React from "react";
 
 const Footer = () => {
@@ -21,28 +21,10 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="#categorias"
-                  className="hover:text-white transition-colors"
-                >
-                  Categorías
-                </Link>
+                <Link href="/categorias">Categorías</Link>
               </li>
               <li>
-                <Link
-                  href="#productos"
-                  className="hover:text-white transition-colors"
-                >
-                  Productos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/pedido-personalizado"
-                  className="hover:text-white transition-colors"
-                >
-                  Pedido Personalizado
-                </Link>
+                <Link href="/pedido-personalizado">Pedido Personalizado</Link>
               </li>
             </ul>
           </div>
